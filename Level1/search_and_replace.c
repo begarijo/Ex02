@@ -12,8 +12,10 @@
 
 #include <unistd.h>
 
-/*The char 'c' nedds to be contained in the str, to replace it for 'r'
- * If it's not, there's no replace and the str is diplayed as normal*/
+/*The char c[0] nedds to be contained in the str, to replace it for r[0]
+ * If it's not, there's no replace and the str is diplayed as normal.
+ * In case *c and *r has more than one character, the program
+ * displays str as normal.*/
 
 void	search_and_replace(char *s, char *c, char *r)
 {
