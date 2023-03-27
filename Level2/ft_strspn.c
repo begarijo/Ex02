@@ -28,9 +28,11 @@ size_t	ft_strspn(const char *s, const char *accept)
 		while (accept[j])
 		{
 			if (s[i] != accept[j])
-				return (i);
+				break ;
 			j++;
 		}
+		if (!accept[j])
+			return (i);
 		i++;
 	}
 	return (i);
